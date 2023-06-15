@@ -1,0 +1,20 @@
+#darkmode{
+    background-image: transparent url("../pic/night-mode.png") no-repeat center;
+    background-size: 30px 30px;
+    width: 45px;
+    height: 45px;
+    filter: grayscale(100%);
+    border: none;
+    border-radius: 50%;
+    transition: background-color 0.3s ease-in-out, filter 0.3s ease-in-out;
+}
+#darkmode:hover,
+#darkmode:focus{
+    filter: none;
+    cursor: pointer;
+}
+
+#darkmode.clicked{
+    filter: none !important;
+    background: transparent url("../pic/sol.png") no-repeat center;
+}
